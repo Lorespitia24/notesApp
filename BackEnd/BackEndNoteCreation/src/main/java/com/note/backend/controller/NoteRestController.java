@@ -134,7 +134,7 @@ public class NoteRestController {
 		}
 		
 		try {
-			note.setIsArchived(true);
+			note.setIsArchived(1);
 			noteNew = noteService.saveNote(note);
 		} catch(DataAccessException e) {
 			response.put("mensaje", "Error al realizar el insert en la base de datos");

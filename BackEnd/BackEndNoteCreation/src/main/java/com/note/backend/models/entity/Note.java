@@ -35,7 +35,7 @@ public class Note {
 //	@NotEmpty(message ="no puede estar vacio")
 //	@Column(nullable=false)
 	@Column
-	private boolean isArchived;
+	private int isArchived;
 	
 	@ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.MERGE)
 	@JoinTable(
@@ -69,11 +69,11 @@ public class Note {
 		this.description = description;
 	}
 
-	public boolean getIsArchived() {
+	public int getIsArchived() {
 		return isArchived;
 	}
 
-	public void setIsArchived(boolean isArchived) {
+	public void setIsArchived(int isArchived) {
 		this.isArchived = isArchived;
 	}
 
