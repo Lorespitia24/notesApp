@@ -30,8 +30,8 @@ import com.note.backend.service.INoteService;
 
 import jakarta.validation.Valid;
 
-@CrossOrigin(origins = { "https://noteapp-f9755.web.app" })
 @RestController
+@CrossOrigin(origins = { "https://note-app-create.web.app" })
 @RequestMapping("/api")
 public class NoteRestController {
 
